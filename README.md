@@ -5,9 +5,6 @@ The problem was, the bot had a LOT of MessageComponents, and these were complete
 different from how Nextcord Views worked. So we decided to save some time porting 
 things over by implementing Novus' ActionRows to Nextcord by extending its View class.
 
-## How it works
-When an ActionRow with buttons 
-
 ## Examples
 To add a MessageComponent with an ActionRow in Nextcord:
 ```py
@@ -63,4 +60,5 @@ await ctx.send(view=view)
   only reimplemented the functionality that was necessary for us to port Unifier
   to Nextcord.
 - Although **theoretically** this should work when making a View as a class, we
-  have not tested this, so proceed with caution.
+  have not tested this, so proceed with caution. Also, auto_defer has been set to
+  False by default, but you may always override this.
