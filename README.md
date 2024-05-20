@@ -1,4 +1,4 @@
-# Novus ActionRows for Nextcord
+# Novus ActionRow for Nextcord
 A while ago, we decided to port our bot Unifier from Novus to Nextcord.
 
 The problem was, the bot had a LOT of MessageComponents, and these were completely 
