@@ -59,6 +59,7 @@ await ctx.send(view=view)
 - This is NOT a full re-implementation of discord.ui.ActionRow (from Novus). We
   only reimplemented the functionality that was necessary for us to port Unifier
   to Nextcord.
-- Although **theoretically** this should work when making a View as a class, we
-  have not tested this, so proceed with caution. Also, auto_defer has been set to
-  False by default, but you may always override this.
+- Although **theoretically** this should work when using this as a subclass, we
+  have not tested this, so proceed with caution.
+- Also, auto_defer has been set to False by default, but you may always override
+  this.
