@@ -71,8 +71,8 @@ class View(MessageComponents):
 
 
 def view_constructor(*args):
-    """Constructs a View with rows"""
+    """Constructs a MessageComponents object with rows"""
 
-    view = View()
+    view = MessageComponents()
     view.add_rows(*args)
     return view
