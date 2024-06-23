@@ -64,7 +64,7 @@ class MessageComponents(nextcord.ui.View):
         return self.row_count
 
 class View(MessageComponents):
-    """Alias for View"""
+    """Alias for MessageComponents"""
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
