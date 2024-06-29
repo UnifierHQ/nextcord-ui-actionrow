@@ -22,7 +22,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-import nextcord
+try:
+    import nextcord
+except:
+    import discord as nextcord
 
 class ActionRow:
     """A basic reimplementation of Novus' ActionRow."""
