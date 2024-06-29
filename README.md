@@ -59,7 +59,10 @@ await ctx.send(view=view)
 - This is NOT a full re-implementation of discord.ui.ActionRow (from Novus). We
   only reimplemented the functionality that was necessary for us to port Unifier
   to Nextcord.
+- You cannot add rows by passing them as arguments for ui.MessageComponents. This
+  is so you can pass arguments to ui.MessageComponents like how you would with
+  nextcord.ui.View.
 - Although **theoretically** this should work when using this as a subclass, we
   have not tested this, so proceed with caution.
-- Also, auto_defer has been set to False by default, but you may always override
+- `auto_defer` has been set to False by default, but you may always override
   this.
